@@ -10,3 +10,5 @@ COPY *.py /app/
 COPY payment.ini /app/
 #CMD ["python", "payment.py"]
 CMD ["uwsgi", "--ini", "payment.ini"]
+
+#Create multi Branch Pipeline for the payment, because we develop the payment in feature branch instead of main branch
